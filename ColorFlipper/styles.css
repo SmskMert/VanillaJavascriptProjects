@@ -10,13 +10,18 @@ html {
 }
 
 .navbar {
+    position: absolute;
+    width: 100vw;
+    top: 0;
     height: 2.5rem;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: #fff;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 .page-title{
@@ -49,7 +54,24 @@ button {
     border-radius: 0.5rem;
 }
 
+.nav-links {
+    letter-spacing: inherit;
+    display: flex;
+    list-style-type: none;
+}
+
+.link {
+    letter-spacing: inherit;
+    margin-right: 1rem;
+    transition: color 0.5s ease ;
+}
+
+.link:hover {
+    color: rgb(180, 0, 0);
+}
+
 .content {
+    margin-top: 2.5rem;
     height:calc(100vh - 2.5rem);
     display: flex;
     align-items: center;
