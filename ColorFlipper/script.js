@@ -2,6 +2,7 @@ let colors = ['#7F27FF', '#9F70FD', '#FDBF60', '#FF8911'];
 let index = 0
 
 let button = getElementByTagName('button');
+
 button.addEventListener('click', changeBgColor);
 
 function changeBgColor() {
