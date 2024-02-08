@@ -14,7 +14,6 @@ function generateColor(){
     let randomColor ='#';
     for (let i = 0; i < 6; i++) {
         randomColor += chars[getRandomIndex()];
-        console.log(randomColor);
     }
     return randomColor;
 }
